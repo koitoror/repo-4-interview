@@ -1,5 +1,5 @@
 # Python program for implementation of Radix Sort 
-  
+import math  
 # A function to do counting sort of arr[] according to 
 # the digit represented by exp. 
 def countingSort(arr, exp1): 
@@ -15,7 +15,7 @@ def countingSort(arr, exp1):
     # Store count of occurrences in count[] 
     for i in range(0, n): 
         index = (arr[i]/exp1) 
-        count[ (index)%10 ] += 1
+        count[ (math.floor(index))%10 ] += 1
   
     # Change count[i] so that count[i] now contains actual 
     #  position of this digit in output array 
@@ -25,7 +25,7 @@ def countingSort(arr, exp1):
     # Build the output array 
     i = n-1
     while i>=0: 
-        index = (arr[i]/exp1) 
+        index = math.floor((arr[i]/exp1)) 
         output[ count[ (index)%10 ] - 1] = arr[i] 
         count[ (index)%10 ] -= 1
         i -= 1

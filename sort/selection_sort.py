@@ -10,7 +10,9 @@ for i in range(len(A)):
     # unsorted array 
     min_idx = i 
     for j in range(i+1, len(A)): 
-        if A[min_idx] > A[j]: 
+        if A[min_idx] > A[j]:
+            print(min_idx)
+            # print(j)
             min_idx = j 
               
     # Swap the found minimum element with  
