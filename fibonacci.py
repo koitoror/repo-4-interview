@@ -13,3 +13,12 @@ def fibonacci(n):
 # Driver Program 
   
 print(fibonacci(9)) 
+
+# fibonacci(9)
+
+def fibonacci2(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print (fibonacci2(9)) 
