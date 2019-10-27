@@ -75,5 +75,3 @@ root.right.right.right.right = Node(-1)
 root.right.right.right.right.left = Node(10) 
 
 print ("Max pathSum of the given binary tree is", maxPathSum(root)) 
-
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007) 
