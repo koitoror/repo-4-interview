@@ -6,7 +6,6 @@ class ShoppingList:
         total_items = 0
         for _ in self.items:
             total_items +=1
-
         return total_items
 
     # Return string
