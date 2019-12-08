@@ -15,8 +15,6 @@ class Solution:
             if num in dic:
                 return [dic[num], i]
                 # return [nums[dic[num]], nums[i]]
-
-
             else:
                 diff = target - num
                 dic[diff] = i 

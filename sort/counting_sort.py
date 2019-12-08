@@ -38,4 +38,4 @@ def countSort(arr):
 # Driver program to test above function 
 arr = "geeksforgeeks"
 ans = countSort(arr) 
-print ("Sorted character array is %s"  %("".join(ans))) 
+print "Sorted character array is %s"  %("".join(ans)) 

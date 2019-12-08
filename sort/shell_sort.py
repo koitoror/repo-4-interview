@@ -1,6 +1,5 @@
 # Python program for implementation of Shell Sort 
-import math
-
+  
 def shellSort(arr): 
   
     # Start with a big gap, then reduce the gap 
@@ -13,7 +12,7 @@ def shellSort(arr):
     # is gap sorted 
     while gap > 0: 
   
-        for i in range(math.floor(gap),n): 
+        for i in range(gap,n): 
   
             # add a[i] to the elements that have been gap sorted 
             # save a[i] in temp and make a hole at position i 
@@ -22,9 +21,9 @@ def shellSort(arr):
             # shift earlier gap-sorted elements up until the correct 
             # location for a[i] is found 
             j = i 
-            while  j >= math.floor(gap) and arr[j-math.floor(gap)] >math.floor(temp): 
-                arr[j] = arr[j-math.floor(gap)] 
-                j -= math.floor(gap) 
+            while  j >= gap and arr[j-gap] >temp: 
+                arr[j] = arr[j-gap] 
+                j -= gap 
   
             # put temp (the original a[i]) in its correct location 
             arr[j] = temp 
