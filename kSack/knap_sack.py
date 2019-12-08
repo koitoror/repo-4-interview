@@ -1,7 +1,7 @@
 # A naive recursive implementation of 0-1 Knapsack Problem 
 
 # Returns the maximum value that can be put in a knapsack of 
-# capacity W 
+# capacity W  
 def knapSack(C, wt, val, n): 
 # def knapSack(n, C)
 

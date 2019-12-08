@@ -8,9 +8,9 @@
 class Node: 
   
     # Constructor to initialize the node object 
-    def __init__(self, data): 
+    def __init__(self, data, next=None): 
         self.data = data 
-        self.next = None
+        self.next = next
 
 
 class LinkedList: 
@@ -64,4 +64,4 @@ llist.printList()
 # Reversed Linked list 
 # 20 4 15 85 
 # Time Complexity: O(n)
-# Space Complexity: O(1)
+# Space Complexity: O(1)z

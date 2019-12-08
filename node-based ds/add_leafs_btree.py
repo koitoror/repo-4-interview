@@ -2,14 +2,14 @@
 # of a binary tree 
 
 INT_MIN = -2**32
-
+ 
 # A binary tree node 
 class Node: 
 	# Constructor to create a new node 
-	def __init__(self, data): 
+	def __init__(self, data, left=None, right=None): 
 		self.data = data 
-		self.left = None
-		self.right = None
+		self.left = left
+		self.right = right
 	
 # Utility function to find maximum sum between any 
 # two leaves. This function calculates two values: 
@@ -23,7 +23,7 @@ def maxPathSumUtil(root, res):
 	# Base Case 
 	if root is None: 
 		return 0
-	
+
 	if root.left is None and root.right is None: 
 		return root.data 
 	

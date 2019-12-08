@@ -1,10 +1,13 @@
-
 # Function to print element and NGE pair for all elements of list 
 def printNGE(arr): 
 
-	for i in range(0, len(arr), 1): 
+	# for i in range(0, len(arr), 1):
+	for i in range(0, len(arr)): 
 		next = -1
-		for j in range(i+1, len(arr), 1): 
+		
+		# for j in range(i+1, len(arr), 1):
+		for j in range(i+1, len(arr)): 
+ 
 			if arr[i] < arr[j]: 
 				next = arr[j] 
 				break
@@ -23,7 +26,6 @@ def createStack():
 	stack = [] 
 	return stack 
 
-
 def isEmpty(stack): 
 	return len(stack) == 0
 
@@ -40,19 +42,16 @@ def pop(stack):
 '''prints element and NGE pair for all elements of 
 arr[] '''
 def printNGE1(arr): 
+# def printNGE(arr):	
 	s = createStack() 
 	element = 0
 	next = 0
 
-def printNGE(arr):
-
-
 	# push the first element to stack 
 	push(s, arr[0]) 
     
-
 	# iterate for rest of the elements 
-	for i in range(1, len(arr), 1): 
+	for i in range(1, len(arr)): 
 		next = arr[i] 
 
 		if isEmpty(s) == False: 
@@ -78,8 +77,6 @@ def printNGE(arr):
 		'''push next to stack so that we can find 
 		next greater for it '''
 		push(s, next)
-
-
 
 	'''After iterating over the loop, the remaining 
 	elements in stack do not have the next greater 

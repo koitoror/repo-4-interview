@@ -1,3 +1,21 @@
+
+# def createStack(): 
+# 	stack = [] 
+# 	return stack 
+
+# def isEmpty(stack): 
+# 	return len(stack) == 0
+
+# def push(stack, x): 
+# 	stack.append(x) 
+
+# def pop(stack): 
+# 	if isEmpty(stack): 
+# 		print("Error : stack underflow") 
+# 	else: 
+# 		return stack.pop() 
+
+
 # class Stack():
 #     def __init__(self):
 #         self.items = []

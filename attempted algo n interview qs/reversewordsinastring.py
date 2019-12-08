@@ -17,5 +17,8 @@ print()
 
 print
 print("Reversed String 2:") 
-print(' '.join(list(s.split(' '))[::-1]))
+
+h = ' '.join(s.split(' ')[::-1])
+
+print(h)
 

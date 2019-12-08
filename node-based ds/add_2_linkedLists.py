@@ -4,15 +4,15 @@
 class Node: 
 
 	# Constructor to initialize the node object 
-	def __init__(self, data): 
+	def __init__(self, data, next=None): 
 		self.data = data 
-		self.next = None
+		self.next = next
 
 class LinkedList: 
 
 	# Function to initialize head 
-	def __init__(self): 
-		self.head = None
+	def __init__(self, head=None): 
+		self.head = head
 
 	# Function to insert a new node at the beginning 
 	def push(self, new_data): 
@@ -22,9 +22,9 @@ class LinkedList:
 
 	# Add contents of two linked lists and return the head 
 	# node of resultant list 
-	def addTwoLists(self, first, second): 
-		prev = None
-		temp = None
+	def addTwoLists(self, first, second, prev=None, cur_node=None): 
+		prev = prev
+		cur_node = cur_node
 		carry = 0
 
 		# While both list exists 
@@ -49,17 +49,17 @@ class LinkedList:
 			Sum = Sum if Sum < 10 else Sum % 10
 
 			# Create a new node with sum as data 
-			temp = Node(Sum) 
+			cur_node = Node(Sum) 
 
 			# if this is the first node then set it as head 
 			# of resultant list 
 			if self.head is None: 
-				self.head = temp 
+				self.head = cur_node 
 			else : 
-				prev.next = temp 
+				prev.next = cur_node 
 
 			# Set prev for next insertion 
-			prev = temp 
+			prev = cur_node 
 
 			# Move first and second pointers to next nodes 
 			if first is not None: 
@@ -68,13 +68,20 @@ class LinkedList:
 				second = second.next
 
 		if carry > 0: 
-			temp.next = Node(carry) 
+			cur_node.next = Node(carry) 
 
 	# Utility function to print the linked LinkedList 
 	def printList(self): 
-		temp = self.head 
-		while(temp): 
-			print (temp.data, end=" "), 
+		cur_node = self.head 
+		while cur_node: 
+			print (cur_node.data, end=" "), 
+			cur_node = cur_node.next
+    
+
+	def printList(self):
+		temp = self.head
+		while temp:
+			print (temp.data, end=" "),
 			temp = temp.next
 
 # Driver program to test above function 
@@ -95,6 +102,8 @@ second.push(4)
 second.push(8) 
 print ("\nSecond List is "), 
 second.printList() 
+
+# print(second.__str__())
 
 # Add the two lists and see result 
 res = LinkedList() 

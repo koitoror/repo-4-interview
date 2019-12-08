@@ -10,8 +10,11 @@ element = 13
 beforeElement = 3 
   
 # Find index 
-index = list1.index(beforeElement)  
+index = list1.index(beforeElement)
+# print(index)  
   
 # Insert element at beforeElement  
 list1.insert(index, element)  
 print(list1)
+
+

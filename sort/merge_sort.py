@@ -34,7 +34,7 @@ def mergeSort(arr):
 # Code to print the list 
 def printList(arr): 
     for i in range(len(arr)):         
-        print(arr[i],end=" ") 
+        print(arr[i], end=" ") 
     print() 
   
 # driver code to test the above code 

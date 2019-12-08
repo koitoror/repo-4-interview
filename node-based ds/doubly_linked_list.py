@@ -12,12 +12,12 @@ class DListNode:
 
 
 class DoublyLinkedList:
-    def __init__(self):
+    def __init__(self, head=None):
         """
         Create a new doubly linked list.
         Takes O(1) time.
         """
-        self.head = None
+        self.head = head
 
     def __repr__(self):
         """
@@ -125,6 +125,7 @@ lst.find('y')
 
 lst.reverse()
 lst
+print(lst)
 # ['end', 'the', 23, 'a', 42, 'X']
 
 elem = lst.find(42)

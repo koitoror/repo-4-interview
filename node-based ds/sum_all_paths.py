@@ -4,10 +4,10 @@
 class Node: 
 
 	# Constructor to create a new node 
-	def __init__(self, data): 
+	def __init__(self, data, left=None, right=None): 
 		self.data = data 
-		self.left = None
-		self.right = None
+		self.left = left
+		self.right = right
 
 # Returs sums of all root to leaf paths. The first parameter is root 
 # of current subtree, the second paramete"r is value of the number 
