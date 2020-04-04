@@ -17,7 +17,7 @@ def print_values(input_dict):
 def main():
     """Entrypoint to application."""
     pdb.set_trace()
-    sample_dict = path_to_dict('sample.json')
+    sample_dict = path_to_dict('sample.json') # path not absolute and zworks if python file run from this directory
     print_values(sample_dict)
 
 

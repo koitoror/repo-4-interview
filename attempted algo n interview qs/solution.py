@@ -31,7 +31,7 @@ def compound_words(english_Words, input_words):
     for eng_word in english_Words:
       for input_word in input_words:
     # for input_word in input_words:
-        # for eng_word in english_Words:
+        # for eng_word in english_Words: 
     # for input_word in input_words:
         #       if any(eng_word in input_words for eng_word in english_Words):
         
@@ -40,11 +40,11 @@ def compound_words(english_Words, input_words):
             # # if input_word in eng_word:
             #       if input_word[len(eng_word):] in english_Words:
             #           wordset.add(input_word)
-            # if input_word.startswith(eng_word):  
-                  # if input_word.endswith(eng_word):
+            # if input_word.startswith(eng_word):
+            #       if input_word.endswith(eng_word):
+            #             if len(eng_word) > len(input_word):
             # if eng_word.startswith(input_word) and eng_word.endswith(input_word):
-   
-                        wordset.add(input_word)
+                              wordset.add(input_word)
     # print(wordset)                   
     return list(wordset)
 
@@ -67,10 +67,10 @@ def checkCompound(EnglishWords_dict, input_word):
 englishWords_dict =  {a:1 for a in english_Words} # transform in dict
 # print (englishWords_dict)
 out_put = []
-for inputword1 in input_words:
-  # out_put.append(inputword1) if checkCompound(englishWords_dict, inputword1) else None
-  if checkCompound(englishWords_dict,inputword1):
-        out_put.append(inputword1)
+for inputword in input_words:
+  # out_put.append(inputword) if checkCompound(englishWords_dict, inputword) else None
+  if checkCompound(englishWords_dict,inputword):
+        out_put.append(inputword)
   
 print(out_put)
 

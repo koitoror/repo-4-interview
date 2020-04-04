@@ -29,3 +29,21 @@ l1.append(9)
 l1.append(11)
 
 l1.printList()
+
+# l2 = LinkedList()
+
+# l2.append(3)
+
+# l2.printList()
+
+# print (l1.printList() == l2.printList())
+
+# print(type(l1))
+
+# a = Node(3)
+# b = Node(3)
+
+# print(a == b)
+
+
+

@@ -13,4 +13,4 @@ def lcs(X, Y, m, n):
 # Driver program to test the above function 
 X = "AGGTAB"
 Y = "GXTXAYB"
-print "Length of LCS is ", lcs(X, Y, len(X), len(Y)) 
+print ("Length of LCS is ", lcs(X, Y, len(X), len(Y))) 
