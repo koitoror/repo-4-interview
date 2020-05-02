@@ -16,7 +16,6 @@ for i in range(len(A)):
     # Swap the found minimum element with  
     # the first element         
     A[i], A[min_idx] = A[min_idx], A[i] 
-  
 # Driver code to test above 
 print ("Sorted array") 
 for i in range(len(A)): 
