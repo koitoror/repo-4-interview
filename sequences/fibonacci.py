@@ -50,7 +50,7 @@ if __name__== "__main__":
 
 
 def fibonacci(n):
-    fibolist=[]
+    # fibolist=[]
     if n < 0:
         return "incorrect input"
     if n < 2:
@@ -104,6 +104,27 @@ def fibonacci(n):
   
 print (fibonacci(9))
 print (fibonacci(2)) 
+
+# DP TABULATION FIBONACCI 
+
+def fib3(n):
+    
+    F = [0, 1]
+
+    if n < 0:
+        return "Invalid Input"
+
+    if n < 2:
+        return n
+
+    for i in range(2, n+1):
+        m = F[i-2] + F[i-1]
+        # print(m)
+        F.append(m)
+
+    return  F
+
+print (fib3(9))
 
 # Helper function that multiplies 
 # 2 matrices F and M of size 2*2, 
