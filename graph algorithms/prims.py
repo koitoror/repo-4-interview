@@ -12,9 +12,9 @@ class Graph():
 
 	# A utility function to print the constructed MST stored in parent[] 
 	def printMST(self, parent): 
-		print "Edge \tWeight"
+		print ("Edge \tWeight")
 		for i in range(1, self.V): 
-			print parent[i], "-", i, "\t", self.graph[i][ parent[i] ] 
+			print (parent[i], "-", i, "\t", self.graph[i][ parent[i] ]) 
 
 	# A utility function to find the vertex with 
 	# minimum distance value, from the set of vertices 
@@ -22,7 +22,7 @@ class Graph():
 	def minKey(self, key, mstSet): 
 
 		# Initilaize min value 
-		min = sys.maxint 
+		min = sys.maxsize 
 
 		for v in range(self.V): 
 			if key[v] < min and mstSet[v] == False: 
@@ -36,7 +36,7 @@ class Graph():
 	def primMST(self): 
 
 		# Key values used to pick minimum weight edge in cut 
-		key = [sys.maxint] * self.V 
+		key = [sys.maxsize] * self.V 
 		parent = [None] * self.V # Array to store constructed MST 
 		# Make key 0 so that this vertex is picked as first vertex 
 		key[0] = 0
