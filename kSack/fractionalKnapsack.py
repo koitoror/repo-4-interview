@@ -17,7 +17,7 @@ class FractionalKnapSack:
 	
 	"""Time Complexity O(n log n)"""
 	@staticmethod
-	def  (wt, val, capacity): 
+	def getMaxValue(wt, val, capacity): 
 		
 		"""function to get maximum value """
 		iVal = [] 
@@ -42,7 +42,7 @@ class FractionalKnapSack:
 		return totalValue 
 
 # Driver Code 
-if __name__ == "__main__": 
+if __name__ == "__main__":
 	wt = [10, 40, 20, 30] 
 	val = [60, 40, 100, 120] 
 	capacity = 50

@@ -60,7 +60,3 @@ def bubblesortByRatio(list1, list2):
         order[j] = order[j+1]
         order[j+1] = temp
   return order
-
-def bubblesortByRatio(list1, list2):
-  n = len(list1)
-  order 
